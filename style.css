@@ -89,7 +89,7 @@ header {
 }
 
 /* CART BUTTON */
-.cart-btn {
+.post-btn {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -102,18 +102,8 @@ header {
   cursor: pointer;
 }
 
-.cart-btn:hover {
-  background-color: #0b9667;
-}
 
-/* CART COUNT */
-.cart-count {
-  background: red;
-  color: white;
-  font-size: 0.6em;
-  padding: 2px 5px;
-  border-radius: 50%;
-}
+
 
 /* ================= HERO ================= */
 .hero {
