@@ -7,18 +7,16 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="logo.png">
 
-  <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/a2d9d6c28b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 <header>
-
   <div class="header-row">
 
     <div class="logo">
-      <img src="logo.png" alt="logo">
+      <img src="logo.png">
       <span>Barter</span>
     </div>
 
@@ -29,77 +27,129 @@
       <a href="#">Vehicles</a>
     </div>
 
+    <!-- PROFILE -->
+    <div class="profile-icon" onclick="toggleProfile()">
+      <img src="allanpfp.jpg">
+    </div>
+
+    <!-- POST BUTTON -->
     <div class="post-btn" onclick="window.open('post.html','_blank')">
-     <b>+</b> 
+      <b>+</b>
     </div>
 
   </div>
 
-  <!-- SEARCH -->
   <div class="top-search">
     <input type="text" placeholder="Search for an item…">
   </div>
-
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- PROFILE PANEL -->
+<div class="profile-panel" id="profilePanel">
+  <div class="profile-top">
+    <button class="back-btn" onclick="toggleProfile()">←</button>
+  </div>
+  
+
+  
+
+  <div class="profile-header">
+    <img src="allanpfp.jpg">
+    <h2>Allan</h2>
+    <p>Student developer building Barter 💚</p>
+  </div>
+
+  <div class="profile-stats">
+    <div>
+      <h3>12</h3>
+      <p>Posts</p>
+    </div>
+    <div>
+      <h3>5</h3>
+      <p>Trades</p>
+    </div>
+    <div>
+      <h3>4.8★</h3>
+      <p>Rating</p>
+    </div>
+  </div>
+
+  <h3 class="profile-title">Your Items</h3>
+
+  <div class="profile-items">
+    <div class="mini-card">
+      <img src="bike.jpg">
+      <p>Bike</p>
+    </div>
+
+    <div class="mini-card">
+      <img src="guitar.jpg">
+      <p>Guitar</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- HERO -->
 <section class="hero">
   <h1>BARTER</h1>
   <p>Where your old is someone's gold.</p>
 </section>
 
-<!-- ================= PRODUCTS ================= -->
+<!-- PRODUCTS -->
 <section class="products">
-
-  <h2 class="section-title">Featured Items</h2>
-
   <div class="product-grid">
 
-    <div class="product-card">
-      <img src="bike.jpg" alt="">
-      <h3>Mountain peak Road bike</h3>
-      <p>Swap for motor</p>
-      <button>View</button>
-    </div>
-
-    <div class="product-card">
-      <img src="guitar.jpg" alt="">
-      <h3>Guitar</h3>
-      <p>Trade for Eukelele</p>
-      <button>View</button>
-    </div>
-
-    <div class="product-card">
-      <img src="headset.jpg" alt="">
-      <h3>Headset na Pink</h3>
-      <p>Swap sa Speaker</p>
-      <button>View</button>
-    </div>
-
-    <div class="product-card">
-      <img src="book.jpg" alt="">
-      <h3>Psychology of Money book</h3>
-      <p>Trade for yellowpad kay wakoy papel</p>
-      <button>View</button>
-    </div>
-
-    <div class="product-card">
-      <img src="painting.jpg" alt="">
-      <h3>Acrylic painting</h3>
-      <p>Swap for jowa djk swap for other painting</p>
-      <button>View</button>
-    </div>
-
-    <div class="product-card">
-      <img src="phone.jpg" alt="">
-      <h3>Cellphone</h3>
-      <p>Looking for earbuds</p>
-      <button>View</button>
-    </div>
-
+  <div class="product-card">
+    <img src="bike.jpg">
+    <h3>Mountain peak Road bike</h3>
+    <p>Swap for motor</p>
+    <button>View</button>
   </div>
 
+  <div class="product-card">
+    <img src="guitar.jpg">
+    <h3>Guitar</h3>
+    <p>Trade for Eukelele</p>
+    <button>View</button>
+  </div>
+
+  <div class="product-card">
+    <img src="headset.jpg">
+    <h3>Headset na Pink</h3>
+    <p>Swap sa Speaker</p>
+    <button>View</button>
+  </div>
+
+  <div class="product-card">
+    <img src="book.jpg">
+    <h3>Psychology of Money book</h3>
+    <p>Trade for yellowpad kay wakoy papel</p>
+    <button>View</button>
+  </div>
+
+  <div class="product-card">
+    <img src="painting.jpg">
+    <h3>Acrylic painting</h3>
+    <p>Swap for jowa djk swap for other painting</p>
+    <button>View</button>
+  </div>
+
+  <div class="product-card">
+    <img src="phone.jpg">
+    <h3>Cellphone</h3>
+    <p>Looking for earbuds</p>
+    <button>View</button>
+  </div>
+
+</div>
 </section>
+
+<script>
+function toggleProfile() {
+  document.getElementById("profilePanel").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
