@@ -11,7 +11,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="header-row">
 
@@ -27,14 +26,14 @@
       <a href="#">Vehicles</a>
     </div>
 
-    <!-- PROFILE -->
-    <div class="profile-icon" onclick="toggleProfile()">
-      <img src="allanpfp.jpg">
-    </div>
+    <div class="right-icons">
+      <div class="profile-icon" onclick="toggleProfile()">
+        <img src="allanpfp.jpg">
+      </div>
 
-    <!-- POST BUTTON -->
-    <div class="post-btn" onclick="window.open('post.html','_blank')">
-      <b>+</b>
+      <div class="post-btn" onclick="window.open('post.html','_blank')">
+        <b>+</b>
+      </div>
     </div>
 
   </div>
@@ -46,12 +45,10 @@
 
 <!-- PROFILE PANEL -->
 <div class="profile-panel" id="profilePanel">
+
   <div class="profile-top">
     <button class="back-btn" onclick="toggleProfile()">←</button>
   </div>
-  
-
-  
 
   <div class="profile-header">
     <img src="allanpfp.jpg">
@@ -81,7 +78,6 @@
       <img src="bike.jpg">
       <p>Bike</p>
     </div>
-
     <div class="mini-card">
       <img src="guitar.jpg">
       <p>Guitar</p>
@@ -98,51 +94,53 @@
 
 <!-- PRODUCTS -->
 <section class="products">
+  <h2 class="section-title">Featured Items</h2>
+
   <div class="product-grid">
 
-  <div class="product-card">
-    <img src="bike.jpg">
-    <h3>Mountain peak Road bike</h3>
-    <p>Swap for motor</p>
-    <button>View</button>
-  </div>
+    <div class="product-card">
+      <img src="bike.jpg">
+      <h3>Mountain peak Road bike</h3>
+      <p>Swap for motor</p>
+      <button>View</button>
+    </div>
 
-  <div class="product-card">
-    <img src="guitar.jpg">
-    <h3>Guitar</h3>
-    <p>Trade for Eukelele</p>
-    <button>View</button>
-  </div>
+    <div class="product-card">
+      <img src="guitar.jpg">
+      <h3>Guitar</h3>
+      <p>Trade for Eukelele</p>
+      <button>View</button>
+    </div>
 
-  <div class="product-card">
-    <img src="headset.jpg">
-    <h3>Headset na Pink</h3>
-    <p>Swap sa Speaker</p>
-    <button>View</button>
-  </div>
+    <div class="product-card">
+      <img src="headset.jpg">
+      <h3>Headset na Pink</h3>
+      <p>Swap sa Speaker</p>
+      <button>View</button>
+    </div>
 
-  <div class="product-card">
-    <img src="book.jpg">
-    <h3>Psychology of Money book</h3>
-    <p>Trade for yellowpad kay wakoy papel</p>
-    <button>View</button>
-  </div>
+    <div class="product-card">
+      <img src="book.jpg">
+      <h3>Psychology of Money book</h3>
+      <p>Trade for yellowpad kay wakoy papel</p>
+      <button>View</button>
+    </div>
 
-  <div class="product-card">
-    <img src="painting.jpg">
-    <h3>Acrylic painting</h3>
-    <p>Swap for jowa djk swap for other painting</p>
-    <button>View</button>
-  </div>
+    <div class="product-card">
+      <img src="painting.jpg">
+      <h3>Acrylic painting</h3>
+      <p>Swap for other painting</p>
+      <button>View</button>
+    </div>
 
-  <div class="product-card">
-    <img src="phone.jpg">
-    <h3>Cellphone</h3>
-    <p>Looking for earbuds</p>
-    <button>View</button>
-  </div>
+    <div class="product-card">
+      <img src="phone.jpg">
+      <h3>Cellphone</h3>
+      <p>Looking for earbuds</p>
+      <button>View</button>
+    </div>
 
-</div>
+  </div>
 </section>
 
 <script>
